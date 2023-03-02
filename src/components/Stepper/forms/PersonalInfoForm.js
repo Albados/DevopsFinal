@@ -15,13 +15,13 @@ const PersonalInfoForm = ({ handleNext }) => {
       validationSchema={Yup.object({
         //
         // Validate FirstName
-        firstName: Yup.string().max(15, "Must be 15 characters or less")
+        firstName: Yup.string().firstName(15, "Must be 15 characters or less")
 		.required("required"),
           
 		  
 
         // Validate LastName
-        lastName: Yup.string().max(20, "Must be 20 characters or less")
+        lastName: Yup.string().lastName(20, "Must be 20 character or less")
 		  .required("required"),
 		  
           
