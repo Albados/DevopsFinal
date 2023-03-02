@@ -27,12 +27,12 @@ const AddressForm = ({ handleNext }) => {
 
         // Validate city
         city: Yup.string()
-          .max(15, "Must be 15 characters or less")
+          .max(15, "Must be 15 characters or less","Invalid last  name")
           .required("required"),
 
         // Validate state
         state: Yup.string()
-          .max(15, "Must be 15 characters or less")
+          .max("Invalid state name")
           .required("required"),
 
         // Validate zipCode
