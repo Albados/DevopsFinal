@@ -21,7 +21,7 @@ const PersonalInfoForm = ({ handleNext }) => {
 		  
 
         // Validate LastName
-        lastName: Yup.string().lastName(20, "Must be 20 alphabets or less")
+        lastName: Yup.string().lastName(20, "Must be 20 character or less")
 		  .required("required"),
 		  
           
