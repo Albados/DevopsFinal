@@ -16,14 +16,15 @@ const PersonalInfoForm = ({ handleNext }) => {
         //
         // Validate FirstName
         firstName: Yup.string().
-		.min(15, "Must be 15 characters or less")
+		.char(15, "Must be 15 characters or less")
+		
 		.required("required"),
           
 		  
 
         // Validate LastName
         lastName: Yup.string()
-		.max("Invalid  name")
+		.min("Invalid  name")
 		.required("required"),
 		  
 		  
