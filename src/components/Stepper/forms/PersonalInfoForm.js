@@ -17,11 +17,12 @@ const PersonalInfoForm = ({ handleNext }) => {
         // Validate FirstName
         firstName: Yup.string()
           .max(15, "Must be 15 characters or less")
-          .required("required"),
+		  .firstName("Invalid name").required("required"),
 
         // Validate LastName
         lastName: Yup.string()
           .max(20, "Must be 20 characters or less")
+		  lastName("Invalid name")
           .required("required"),
 
         // Validate Email
